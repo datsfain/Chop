@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c966afc69c6f9274ba75c7d144cf1251, type: 3}
+  m_Name: Team_Top
+  m_EditorClassIdentifier: 
+  <Color>k__BackingField: {r: 0, g: 0.03532815, b: 1, a: 1}
+  <RemainingSize>k__BackingField: {fileID: 11400000, guid: bf703ae807d687e42b414e42d0e91cfe, type: 2}
+  <InitialSize>k__BackingField: {fileID: 11400000, guid: f7a92576750e2a84e932516d0462197e, type: 2}
