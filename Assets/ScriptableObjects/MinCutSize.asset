@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ecd15e367d847429510f26d34c4dae, type: 3}
   m_Name: MinCutSize
   m_EditorClassIdentifier: 
-  m_Value: 0.05
+  m_Value: 0.25

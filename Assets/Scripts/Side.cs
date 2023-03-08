@@ -9,6 +9,7 @@ public class Side : MonoBehaviour
     {
         m_Renderer.color = m_Team.Color;
         m_Team.RemainingSize.Changed += RemainingSize_Changed;
+        RemainingSize_Changed();
     }
 
     private void OnDestroy()

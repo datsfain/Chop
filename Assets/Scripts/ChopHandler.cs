@@ -6,6 +6,7 @@ public class ChopHandler : MonoBehaviour
     [SerializeField] private TeamSO m_BottomTeam;
     [SerializeField] private TeamReferenceSO m_ChoppingTeam;
     [SerializeField] private FloatVariable m_ChopperY;
+    [SerializeField] private FloatVariable m_MinCutSize;
 
     private TeamSO GetOpposingTeam(TeamSO team)
     {
@@ -48,7 +49,11 @@ public class ChopHandler : MonoBehaviour
 
         var opposingTeam = GetOpposingTeam(team);
 
-        opposingTeam.RemainingSize.Value = Mathf.Abs(m_ChopperY.Value);
+        var remainingSize = Mathf.Abs(m_ChopperY.Value);
+        var maxRemainingSize = Mathf.Max(0f, opposingTeam.RemainingSize.Value - m_MinCutSize.Value);
+        var minRemainingSize = Mathf.Min(maxRemainingSize, m_MinCutSize.Value);
+
+        opposingTeam.RemainingSize.Value = Mathf.Clamp(remainingSize, minRemainingSize, maxRemainingSize);
 
         m_ChoppingTeam.Ref = opposingTeam;
     }

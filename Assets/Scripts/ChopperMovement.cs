@@ -26,7 +26,7 @@ public class ChopperMovement : MonoBehaviour
         m_ChopperY.Value = newPosition.y;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Move();
     }

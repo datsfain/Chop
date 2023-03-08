@@ -1573,3 +1573,4 @@ MonoBehaviour:
   m_BottomTeam: {fileID: 11400000, guid: e68d318829642c647ad27b32f757f74d, type: 2}
   m_ChoppingTeam: {fileID: 11400000, guid: d4ab3107586d9924395627f8dc32a71c, type: 2}
   m_ChopperY: {fileID: 11400000, guid: ba107aa1c0bbcb443a1ffb97b4aebd09, type: 2}
+  m_MinCutSize: {fileID: 11400000, guid: 38abe48b01c3a994fa51041ef8f35033, type: 2}
